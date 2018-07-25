@@ -1,0 +1,54 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+<div class="wrapper">
+  <!-- Sidebar Holder -->
+  <nav id="sidebar">
+      <div class="sidebar-header">
+        <a href="#" ><h3 >CR 's Porfolio</h3></a>
+      </div>
+
+      <ul class="list-unstyled ">
+          <li>
+              <a routerLink="/home" routerLinkActive="active">Home</a>
+          </li>
+          <li>
+            <a routerLink="/about" routerLinkActive="active">About</a>
+          </li>
+          <li>
+            <a routerLink="/experience" routerLinkActive="active">Work Experience</a>
+          </li>
+          <li>
+            <a routerLink="/skill" routerLinkActive="active">Skills</a>
+          </li>
+          <li>
+            <a routerLink="/mywork" routerLinkActive="active">My Work</a>
+          </li>
+          <li>
+            <a routerLink="/contact" routerLinkActive="active">Contact</a>
+          </li>
+      </ul>
+
+      <ul class="list-unstyled CTAs">
+          <li>
+              <a href="#" class="download">Download Resume</a>
+          </li>
+      </ul>
+  </nav>
+
+  <!-- Page Content Holder -->
+  <div id="content" class="bg">
+      <button type="button" id="sidebarCollapse" class="navbar-btn" >
+          <span></span>
+          <span></span>
+          <span></span>
+      </button>
+
+      <router-outlet></router-outlet>
+      
+  </div>
+</div>
+
+
+
+
+<!-- Routed view go here -->
