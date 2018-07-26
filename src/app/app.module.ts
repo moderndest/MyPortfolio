@@ -9,7 +9,8 @@ import { ExperienceComponent } from './experience/experience.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { SkillComponent } from './skill/skill.component';
 import { MyworkComponent } from './mywork/mywork.component';
-
+import { ContactComponent } from './contact/contact.component';
+import { AngularFontAwesomeModule } from 'angular-font-awesome';
 
 
 @NgModule({
@@ -20,10 +21,12 @@ import { MyworkComponent } from './mywork/mywork.component';
     ExperienceComponent,
     PageNotFoundComponent,
     SkillComponent,
-    MyworkComponent
+    MyworkComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
+    AngularFontAwesomeModule,
     AppRoutingModule
   ],
   providers: [],
