@@ -1,0 +1,40 @@
+.profilepic{
+    width: 500px;
+    height: auto;
+    margin: 0;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.aboutus-wrapper{
+    position: relative;
+    padding: 100px 20px;
+}
+
+.profile-content{
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+p .fa-caret-right{
+
+    text-align: center;
+}
+
+@media screen and (max-width:768px) {
+    .profilepic{
+        width: 400px;
+        height: auto;
+        margin: 0;
+        display: block;
+        position: relative;
+        // top: 0%;
+        // left: 0%;
+        // transform: translate(0%,0%);
+    }
+}

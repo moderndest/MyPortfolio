@@ -1,8 +1,8 @@
 <!--The content below is only a placeholder and can be replaced.-->
-
-<div class="wrapper">
+<!-- wrapper -->
+<!-- <div class="wrapper"> -->
   <!-- Sidebar Holder -->
-  <nav id="sidebar">
+  <!-- <nav id="sidebar">
       <div class="sidebar-header">
         <a href="#" ><h3 >CR 's Porfolio</h3></a>
       </div>
@@ -12,16 +12,19 @@
               <a routerLink="/home" routerLinkActive="active">Home</a>
           </li>
           <li>
-            <a routerLink="/about" routerLinkActive="active">About</a>
-          </li>
-          <li>
-            <a routerLink="/experience" routerLinkActive="active">Work Experience</a>
+            <a routerLink="/about" routerLinkActive="active">About me</a>
           </li>
           <li>
             <a routerLink="/skill" routerLinkActive="active">Skills</a>
           </li>
           <li>
-            <a routerLink="/mywork" routerLinkActive="active">My Work</a>
+            <a routerLink="/experience" routerLinkActive="active">Experience</a>
+          </li>
+          <li>
+            <a routerLink="/mywork" routerLinkActive="active">My work</a>
+          </li>
+          <li>
+            <a routerLink="/contact" routerLinkActive="active">Resume</a>
           </li>
           <li>
             <a routerLink="/contact" routerLinkActive="active">Contact</a>
@@ -36,10 +39,10 @@
       <ul>
           <li><a class="icon fa fa-github fa-2x" aria-hidden="true"> </a> </li>
       </ul>
-  </nav>
+  </nav> -->
 
   <!-- Page Content Holder -->
-  <div id="content" class="bg">
+  <!-- <div id="content" class="bg">
       <button type="button" id="sidebarCollapse" class="navbar-btn" >
           <span></span>
           <span></span>
@@ -49,7 +52,28 @@
       <router-outlet></router-outlet>
       
   </div>
+</div> -->
+
+<div class="modal-nav-overlay" id="modalnavoverlay" #modalnavoverlay></div>
+<div class="toggle" id="toggle" (click)="hamaction()" #toggle></div>
+
+<div id="modal" #modal>
+    <div class="modal__content">
+        <ul class="menu-options">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">SKILLS</a></li>
+            <li><a href="#">MY WORK</a></li>
+            <li><a href="#">BLOG</a></li>
+            <li><a href="#">RESUME</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
 </div>
+        
+
+
+<router-outlet></router-outlet>
 
 
 
